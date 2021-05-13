@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+  --main-color: #FFA822;
+  --sub-color: #1AC0C6;
+  --font-color: #134E6F;
+  --point-color: #FF6150;
+  --background-color: #DEE0E6;
+  --sub-font-color: #ffffff;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 4px;
+  background-color: var(--main-color);
+  color: var(--sub-font-color);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--point-color);
+}
+
+#navigations {
+  background-color: var(--sub-color);
+  padding: 1%;
+  height: 100px;
+}
+
+#phoneNav {
+  display: none;
+  float: right;
+}
+
+.line {
+  background-color: var(--background-color);
+  width: 44px;
+  height: 5px;
+  margin-bottom: 12px;
+}
+
+#welcomeLogOutContainer {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  background-color: var(--point-color);
+  padding: 1%;
+}
+
+#logOutForm {
+  justify-self: right;
+  margin-right: 1%;
+}
+
+#welcomeSection {
+  color: var(--sub-font-color);
+}
+
+#landingLogo {
+  position: absolute;
+  top: 7%;
+  left: 2%;
+}
+
+.mainNavLi {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+.mainNavLi a {
+  color: var(--sub-font-color);
+  font-size: 1.6em;
+}
+
+.mainNavLi a:hover {
+  color: var(--font-color);
+}
+
+.banner {
+  background-image: url("../imgs/planner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+/* intro section */
+ #intro {
+   background-color: var(--main-color);
+   padding: 10%;
+   margin: 10%;
+   border-radius: 15px;
+ }
+
+ .sectionTitle {
+   font-size: 2.3em;
+   margin-top: 0;
+ }
+
+ .subText {
+   font-size: 1.4em;
+   margin-bottom: 7%;
+ }
+
+ .introP {
+   font-size: 1.5em;
+ }
+
+
+ #introUl li {
+   margin-bottom: 2%;
+   font-size: 1.1em;
+ }
+
+ #youCanSection {
+   background-color: var(--sub-font-color);
+   padding: 5%;
+   border-radius: 15px;
+ }
+
+ /* About Us */
+#about {
+  padding: 4%;
+}
+
+#aboutUs {
+  display: grid;
+  grid-template-areas: "maggie taqwa izzy alex";
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+}
+
+#maggie {
+  grid-area: maggie;
+}
+
+#taqwa {
+  grid-area: taqwa;
+}
+
+#izzy {
+  grid-area: izzy;
+}
+
+#alex {
+  grid-area: alex;
+}
+
+.ownerContainer {
+  padding: 5%;
+  text-align: center;
+}
+
+.ownerContainer p {
+  text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+  #aboutUs {
+    display: grid;
+    grid-template-areas: "maggie taqwa"
+    "izzy alex";
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #phoneNav {
+    display: block;
+  }
+
+  #desktopNav {
+    display: none;
+  }
+
+  #aboutUs {
+    display: grid;
+    grid-template-areas: "maggie" "taqwa"
+    "izzy" "alex";
+  }
+}

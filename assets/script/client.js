@@ -10,7 +10,7 @@ $(document).ready(function () {
                 console.log("Data returned from server: ", data);
                 if (data['status'] == "success") {
                     // redirect
-                    window.location.replace("/profile");
+                    window.location.replace("/landing");
                 } else {
                     // show error message
                     $("#errorMsg").html(data['msg']);
